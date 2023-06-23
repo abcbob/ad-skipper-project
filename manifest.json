@@ -1,0 +1,17 @@
+{
+    "name": "adskipper",
+    "version":"1.0.0",
+    "author":"Quang Hung Nguyen",
+    "content_scripts":[
+        {
+            "matches":["https://www.youtube.com/*"],
+            "js":["adskipper.js"]
+        }
+    ],
+    "permissions":["activeTab"],
+    "description": "adskipper for Youtube, automatically skip ads/popups when appear",
+    "manifest_version":3,
+    "action": {
+        "default_popup": "adskipper.html"
+    }
+}
